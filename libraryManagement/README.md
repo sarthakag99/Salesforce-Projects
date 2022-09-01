@@ -1,4 +1,4 @@
-# Id-Password for Guest Users 
+# Username and Password for Guest Users 
 Step-1 -> Go to login.salesforce.com
 Step-2 -> Enter Username - librarymanagementitt@gmail.com.member-0023 and password - library123
 
