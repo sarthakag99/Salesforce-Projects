@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="Imperative Search Books" icon-name="standard:contact">
+        <div class="slds-m-left_medium">
+            <p>
+                <lightning-button label="Get Books" onclick={handleClick}></lightning-button>
+            </p>
+            <table class="slds-table slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th>Item Id</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Rack</th>
+                        <th>Copies</th>
+                        <th>Is Available?</th>
+                        <th>Price</th>
+                        <th>Total Copies Issued</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={collections} for:item="collection">
+                        <tr key={collection.Id}>
+                            <td>{collection.Name}</td>
+                            <td>{collection.Title__c}</td>
+                            <td>{collection.Category__c}</td>
+                            <td>{collection.Rack__r.Name}</td>
+                            <td>{collection.Copies__c}</td>
+                            <td>{collection.Is_Available__c}</td>
+                            <td>{collection.Price__c}</td>
+                            <td>{collection.Total_Copies_Issued__c}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </lightning-card>
+</template>

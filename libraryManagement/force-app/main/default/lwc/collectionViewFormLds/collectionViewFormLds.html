@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Collection View form LDS" icon-name="standard:contact">
+        <div class="slds-m-left_medium">
+            <lightning-record-view-form record-id={recordId} object-api-name={objectApiName}>
+                <lightning-output-field field-name="Title__c"></lightning-output-field>
+                <lightning-output-field field-name="Rack__c"></lightning-output-field>
+                <lightning-output-field field-name="Copies__c"></lightning-output-field>
+                <lightning-output-field field-name="Price__c"></lightning-output-field>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>
